@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>Supply Chain Management System</h1>
+
+    <a href="/logout">
+        <button>Logout</button>
+    </a>
+
+</div>
+
+<div class="dashboard-container">
+
+    <div class="card">
+        <h3>Customers</h3>
+        <p>Manage Customer Records</p>
+
+        <a href="/customers">
+            <button>Open</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Products</h3>
+        <p>Manage Product Records</p>
+
+        <a href="/products">
+            <button>Open</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Orders</h3>
+        <p>Manage Orders</p>
+
+        <a href="/orders">
+            <button>Open</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Suppliers</h3>
+        <p>Manage Supplier Records</p>
+
+        <a href="/suppliers">
+            <button>Open</button>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Customer Management</h1>
+
+<form onsubmit="addCustomer(event)" class="form">
+    <h3>Add Customer</h3>
+
+    <input type="text" id="name" placeholder="Enter Name" required>
+
+    <input type="email" id="email" placeholder="Enter Email" required>
+
+    <!-- EXACT 10 DIGITS -->
+    <input type="text" id="phone" placeholder="Phone Number"
+           pattern="[0-9]{10}" maxlength="10" required>
+
+    <input type="text" id="address" placeholder="Enter Address" required>
+
+    <br><br>
+
+    <button type="submit">Add Customer</button>
+    <button type="button" onclick="loadCustomers()">Show Customers</button>
+</form>
+
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

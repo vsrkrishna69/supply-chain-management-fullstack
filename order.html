@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order Management</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Order Management</h1>
+    <a href="/dashboard"><button>Back to Dashboard</button></a>
+</div>
+
+<form onsubmit="addOrder(event)" class="form">
+    <input type="number" id="customerId"     placeholder="Customer ID"      required>
+    <input type="text"   id="trackingNumber" placeholder="Tracking Number"  required>
+    <input type="date"   id="orderDate"                                      required>
+    <input type="text"   id="status"         placeholder="Status (e.g. PENDING)" required>
+    <button type="submit">Add Order</button>
+</form>
+
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th><th>Tracking #</th><th>Order Date</th><th>Status</th><th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="/script.js"></script>
+</body>
+</html>
